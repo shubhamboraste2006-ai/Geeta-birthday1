@@ -1,0 +1,231 @@
+/* ====================================================================
+   A SPECIAL BIRTHDAY SURPRISE FOR GEETU ❤️
+   Responsive Stylesheet (css/responsive.css)
+   ==================================================================== */
+
+/* Medium Devices (Tablets, small laptops <= 1024px) */
+@media screen and (max-width: 1024px) {
+  .story-section {
+    padding: 80px 20px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 28px 20px;
+  }
+
+  .lightbox-prev {
+    left: 10px;
+  }
+
+  .lightbox-next {
+    right: 10px;
+  }
+}
+
+/* Tablets and Mobile Devices (<= 768px) */
+@media screen and (max-width: 768px) {
+  .story-section {
+    padding: 70px 16px;
+  }
+
+  .glass-card {
+    padding: 36px 20px;
+    border-radius: 20px;
+  }
+
+  .hero-content {
+    padding: 40px 18px;
+  }
+
+  .hero-heart-badge {
+    width: 62px;
+    height: 62px;
+    font-size: 1.8rem;
+  }
+
+  .nickname-reveal-box {
+    padding: 24px 20px;
+    width: 100%;
+  }
+
+  .heart-frame-svg {
+    width: 115%;
+    height: 130%;
+  }
+
+  /* Single Column Timeline for Mobile */
+  .timeline-container {
+    padding: 20px 0;
+  }
+
+  .timeline-stem {
+    left: 24px;
+    transform: none;
+  }
+
+  .timeline-item {
+    width: 100% !important;
+    left: 0 !important;
+    padding-left: 64px !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+    margin-bottom: 45px;
+  }
+
+  .timeline-node {
+    left: 4px !important;
+    right: auto !important;
+    width: 36px;
+    height: 36px;
+    font-size: 0.85rem;
+  }
+
+  .timeline-card {
+    padding: 20px;
+  }
+
+  /* Polaroid Gallery on Mobile */
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px 16px;
+  }
+
+  .polaroid-card {
+    padding: 12px 12px 20px 12px;
+  }
+
+  .polaroid-caption {
+    font-size: 1.45rem;
+    margin-top: 12px;
+  }
+
+  /* Envelope on Mobile */
+  .envelope-container {
+    width: 290px;
+    height: 190px;
+  }
+
+  .envelope-flap-top {
+    border-left-width: 145px;
+    border-right-width: 145px;
+    border-top-width: 105px;
+  }
+
+  .envelope-flap-left {
+    border-top-width: 95px;
+    border-bottom-width: 95px;
+    border-left-width: 145px;
+  }
+
+  .envelope-flap-right {
+    border-top-width: 95px;
+    border-bottom-width: 95px;
+    border-right-width: 145px;
+  }
+
+  .envelope-flap-bottom {
+    border-left-width: 145px;
+    border-right-width: 145px;
+    border-bottom-width: 115px;
+  }
+
+  .envelope-letter-peek {
+    width: 255px;
+    height: 165px;
+  }
+
+  .wax-seal {
+    top: 88px;
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+
+  .letter-parchment {
+    padding: 35px 22px;
+  }
+
+  .letter-salutation {
+    font-size: 2.2rem;
+  }
+
+  .letter-body {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .letter-body .letter-highlight {
+    font-size: 1.8rem;
+  }
+
+  /* Birthday Cake Scale on Mobile */
+  .cake-wrapper {
+    transform: scale(0.85);
+    margin: 15px auto 25px auto;
+  }
+
+  /* Floating Music Player Compact Mode */
+  .floating-music-player {
+    bottom: 16px;
+    right: 16px;
+    padding: 6px 12px 6px 8px;
+  }
+
+  .volume-slider-container {
+    display: none; /* Hide slider on mobile to keep player compact */
+  }
+
+  .track-title {
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Lightbox Controls */
+  .lightbox-btn {
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .lightbox-prev {
+    left: 8px;
+  }
+
+  .lightbox-next {
+    right: 8px;
+  }
+
+  .lightbox-close {
+    top: -40px;
+    right: 5px;
+    font-size: 1.6rem;
+  }
+}
+
+/* Extra Small Mobile Devices (<= 480px) */
+@media screen and (max-width: 480px) {
+  .romantic-btn {
+    width: 100%;
+    padding: 15px 24px;
+    font-size: 1.05rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .cake-wrapper {
+    transform: scale(0.75);
+  }
+
+  .giant-heart-wrapper {
+    width: 180px;
+    height: 160px;
+  }
+}
+

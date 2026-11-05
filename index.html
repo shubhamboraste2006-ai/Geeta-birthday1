@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Geetu ❤️ | A Special Surprise</title>
+  <meta name="description"
+    content="A romantic, emotional, and interactive birthday surprise dedicated to Geetu (Mazhi Puran Poli ❤️)." />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❤️</text></svg>" />
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Background Interactive Canvas Layers -->
+  <canvas id="petals-canvas"></canvas>
+  <canvas id="fireworks-canvas"></canvas>
+
+  <!-- Floating Music Player Controller -->
+  <aside class="floating-music-player" id="floating-music-player" aria-label="Music Player">
+    <div class="vinyl-disk" id="player-vinyl-disk" title="Click to Play/Pause Music">
+      <div class="vinyl-center"></div>
+    </div>
+    <div class="player-info">
+      <span class="track-title" id="player-track-title">Romantic Melody for Geetu</span>
+      <span class="track-status" id="player-status-text">Click below to start</span>
+    </div>
+    <div class="player-controls">
+      <button class="player-btn" id="player-play-btn" title="Play / Pause" aria-label="Play or Pause Music">
+        <i class="fa-solid fa-play"></i>
+      </button>
+      <button class="player-btn" id="player-mute-btn" title="Mute / Unmute" aria-label="Mute or Unmute Music">
+        <i class="fa-solid fa-volume-high"></i>
+      </button>
+      <div class="volume-slider-container">
+        <input type="range" min="0" max="1" step="0.05" value="0.65" class="volume-slider" id="player-volume-slider"
+          title="Volume" aria-label="Volume Slider" />
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Story Content Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- ==============================================================
+         1. HERO / INTRODUCTION: A SURPRISE FOR GEETU
+         ============================================================== -->
+    <header class="story-section" id="hero">
+      <div class="container">
+        <div class="hero-content glass-card">
+          <div class="hero-heart-badge">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="section-tag">
+            <i class="fa-solid fa-sparkles"></i> A Birthday Surprise Just For You
+          </div>
+          <h1 class="hero-title text-shimmer" id="hero-greeting">Hey Geetu ❤️</h1>
+          <div class="hero-subtitle">
+            <span id="hero-subtitle-text">Someone has prepared a little surprise for you...</span>
+            <span class="typewriter-cursor"></span>
+          </div>.....
+          <button class="romantic-btn" id="open-surprise-btn">
+            <span>Open Your Surprise 💌</span>
+            <i class="fa-solid fa-arrow-down btn-icon"></i>
+          </button>
+          <div class="hero-audio-hint">
+            <i class="fa-solid fa-headphones"></i> Put on your earphones for the best experience
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==============================================================
+         2. SPECIAL NICKNAME SECTION
+         ============================================================== -->
+    <section class="story-section" id="nickname">
+      <div class="container">
+        <div class="nickname-card glass-card">
+          <div class="section-tag">
+            <i class="fa-solid fa-heart"></i> Only In My Heart
+          </div>
+          <h2 class="nickname-question" id="nickname-question">
+            Do you know what you'll always be?
+          </h2>
+          <div class="nickname-reveal-box">
+            <!-- Animated Glowing Heart Outline SVG -->
+            <svg class="heart-frame-svg" viewBox="0 0 500 350" preserveAspectRatio="none">
+              <path class="heart-path"
+                d="M 250,90 C 250,40 200,20 150,20 C 70,20 20,80 20,160 C 20,240 140,290 250,340 C 360,290 480,240 480,160 C 480,80 430,20 350,20 C 300,20 250,40 250,90 Z"
+                fill="none" stroke="#F4A6B8" stroke-width="3" stroke-linecap="round" />
+            </svg>
+            <div class="nickname-text text-shimmer" id="nickname-text">
+              Mazhya AAICHYA Hatachi Puran Poli ❤️
+            </div>
+          </div>
+          <p class="nickname-subtext" id="nickname-subtext">
+            This one belongs only to you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         3. OUR BEAUTIFUL MEMORIES - PHOTO GALLERY
+         ============================================================== -->
+    <section class="story-section" id="gallery">
+      <div class="container">
+        <div class="section-tag">
+          <i class="fa-solid fa-camera-retro"></i> Captured Moments
+        </div>
+        <h2 class="section-title">Our Beautiful Memories</h2>
+        <p class="section-subtitle">
+          Frozen in time, treasured forever in my heart.
+        </p>
+
+        <!-- Polaroid Scrapbook Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Dynamically populated from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Fullscreen Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Viewer">
+      <div class="lightbox-dialog">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="lightbox-img-wrapper">
+          <img src="" alt="Memory Image" class="lightbox-img" id="lightbox-img" />
+        </div>
+        <div class="lightbox-info">
+          <h3 class="lightbox-caption" id="lightbox-caption">A beautiful moment ❤️</h3>
+          <div class="lightbox-counter" id="lightbox-counter">Memory 1 of 8</div>
+        </div>
+        <button class="lightbox-btn lightbox-prev" id="lightbox-prev" aria-label="Previous Photo">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-btn lightbox-next" id="lightbox-next" aria-label="Next Photo">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- ==============================================================
+         4. OUR STORY - MEMORY TIMELINE
+         ============================================================== -->
+    <section class="story-section" id="timeline">
+      <div class="container">
+        <div class="section-tag">
+          <i class="fa-solid fa-infinity"></i> The Journey
+        </div>
+        <h2 class="section-title">Our Story</h2>
+        <p class="section-subtitle">
+          Every little moment that brought us to where we are today...
+        </p>
+
+        <div class="timeline-container" id="timeline-wrapper">
+          <!-- Dynamically populated from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         5. A LETTER FOR YOU
+         ============================================================== -->
+    <section class="story-section" id="letter">
+      <div class="container">
+        <div class="letter-section-wrapper">
+          <div class="section-tag">
+            <i class="fa-solid fa-feather-pointed"></i> Written From The Heart
+          </div>
+          <h2 class="section-title">A Letter For You</h2>
+          <p class="section-subtitle">
+            Geetu, I have something to tell you...
+          </p>
+
+          <!-- Interactive 3D Envelope -->
+          <div class="envelope-container" id="envelope-interactive" title="Click to open the letter">
+            <div class="envelope-base">
+              <div class="envelope-letter-peek">
+                <div class="peek-line short"></div>
+                <div class="peek-line"></div>
+                <div class="peek-line"></div>
+                <div class="peek-line short"></div>
+              </div>
+              <div class="envelope-flap-left"></div>
+              <div class="envelope-flap-right"></div>
+              <div class="envelope-flap-bottom"></div>
+              <div class="envelope-flap-top"></div>
+              <div class="wax-seal">
+                <i class="fa-solid fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <div class="envelope-instruction">
+            <i class="fa-solid fa-hand-pointer"></i> Click the envelope to open 💌
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unfolded Love Letter Modal -->
+    <div class="letter-modal" id="letter-modal" role="dialog" aria-modal="true" aria-label="Love Letter Modal">
+      <div class="letter-parchment">
+        <h3 class="letter-salutation" id="letter-salutation">Dear Geetu,</h3>
+        <div class="letter-body" id="letter-body">
+          <!-- Populated from config.js -->
+        </div>
+        <div class="letter-signoff" id="letter-signoff">With lots of love ❤️</div>
+        <div class="letter-sender" id="letter-sender">Always Yours</div>
+        <div class="letter-close-btn">
+          <button id="letter-close-btn">
+            <i class="fa-solid fa-envelope-open-text"></i> Keep in My Heart & Fold Back
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==============================================================
+         6. BIRTHDAY CAKE SURPRISE
+         ============================================================== -->
+    <section class="story-section" id="cake">
+      <div class="container">
+        <div class="section-tag">
+          <i class="fa-solid fa-cake-candles"></i> Time To Celebrate
+        </div>
+        <h2 class="romantic-heading text-shimmer" id="cake-heading">
+          HAPPY BIRTHDAY MY LOVE! 🎂
+        </h2>
+        <p class="section-subtitle" id="cake-subtitle">
+          Close your eyes, make a secret wish in your heart, and blow out the candles!
+        </p>
+
+        <div class="cake-scene">
+          <div class="cake-wrapper">
+            <!-- Candles Row -->
+            <div class="candles-row" id="candles-row">
+              <div class="candle">
+                <div class="wick"></div>
+                <div class="flame"></div>
+                <div class="smoke-puff"></div>
+              </div>
+              <div class="candle">
+                <div class="wick"></div>
+                <div class="flame"></div>
+                <div class="smoke-puff"></div>
+              </div>
+              <div class="candle">
+                <div class="wick"></div>
+                <div class="flame"></div>
+                <div class="smoke-puff"></div>
+              </div>
+            </div>
+
+            <!-- Cake Tier 3 (Top) -->
+            <div class="cake-layer-3">
+              <div class="frosting-drip"></div>
+              <div class="cake-berries">
+                <div class="cake-berry"></div>
+                <div class="cake-berry"></div>
+                <div class="cake-berry"></div>
+              </div>
+            </div>
+
+            <!-- Cake Tier 2 (Middle) -->
+            <div class="cake-layer-2">
+              <div class="frosting-drip pink"></div>
+            </div>
+
+            <!-- Cake Tier 1 (Bottom) -->
+            <div class="cake-layer-1"></div>
+
+            <!-- Cake Plate -->
+            <div class="cake-plate"></div>
+          </div>
+
+          <!-- Interactive Candle Blow Action -->
+          <div class="cake-interaction-area">
+            <button class="romantic-btn" id="make-wish-btn">
+              <i class="fa-solid fa-wand-magic-sparkles btn-icon"></i>
+              <span>Make a Wish ✨</span>
+            </button>
+            <div class="wish-status-banner" id="wish-status-banner">
+              Your wish has been whispered to the universe! ✨
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         7. ROMANTIC CELEBRATION
+         ============================================================== -->
+    <section class="story-section" id="celebration">
+      <!-- Floating Helium Balloons Container -->
+      <div class="balloons-container" id="balloons-container"></div>
+
+      <div class="container">
+        <div class="section-tag">
+          <i class="fa-solid fa-champagne-glasses"></i> Celebrations & Blessings
+        </div>
+        <h2 class="romantic-heading text-shimmer" id="celebration-headline">
+          Today is all about YOU, Love You Geetu ❤️
+        </h2>
+        <p class="section-subtitle" id="celebration-message">
+          Asich Mazya Sobat Kayam Raha Majhi "Rukmini" Banun.
+        </p>
+
+        <!-- Blessings Grid -->
+        <div class="celebration-grid" id="celebration-grid">
+          <!-- Dynamically populated from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================================
+         8. FINAL SURPRISE & RESTART
+         ============================================================== -->
+    <footer class="story-section" id="final">
+      <div class="container">
+        <div class="final-content glass-card">
+          <p class="final-pretitle">One last thing, Geetu...</p>
+
+          <div class="giant-heart-wrapper">
+            <svg class="giant-heart-svg" viewBox="0 0 100 100">
+              <defs>
+                <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#F4A6B8" />
+                  <stop offset="50%" stop-color="#D8A0A8" />
+                  <stop offset="100%" stop-color="#A78BFA" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M 50,25 C 50,12 38,0 25,0 C 11,0 0,11 0,25 C 0,50 35,75 50,95 C 65,75 100,50 100,25 C 100,11 89,0 75,0 C 62,0 50,12 50,25 Z"
+                fill="url(#heartGrad)" />
+            </svg>
+          </div>
+
+          <h2 class="final-nickname text-shimmer" id="final-nickname">
+            Mazhi Puran Poli ❤️
+          </h2>
+          <p class="final-message" id="final-message">
+            Happy Birthday to my favourite person. You deserve all the happiness in this world.
+          </p>
+
+          <button class="romantic-btn" id="restart-experience-btn">
+            <i class="fa-solid fa-rotate-right btn-icon"></i>
+            <span>Experience Again ❤️</span>
+          </button>
+
+          <p class="final-footer-note">
+            Made with all my heart just for Geetu ❤️
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Third-party CDN Animation Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Project Scripts in Modular Order -->
+  <script src="config.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/celebration.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

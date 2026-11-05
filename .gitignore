@@ -1,0 +1,10 @@
+# IDE & Editor files
+.codeatlas/
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
